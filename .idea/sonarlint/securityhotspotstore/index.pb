@@ -25,3 +25,7 @@ w
 G.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,b\4\b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3
 Å
 Q.idea/sonarlint/securityhotspotstore/2/3/23969a41c98aa50b1e92a6cfd6daea1ce5ea70f9,3\1\31b2eedf97e14a8090dafc0b67dbe3dc1e0b8963
+è
+_1406-exam-materials/1406-Exam-Code/out/production/1406-Exam-Code/StringCollectionImplementation,b\b\bb4ea65bd7bf43b5534a43ab151b1b0b1163857d
+T
+$StringCollectionImplementation1.java,6\3\635b247035a2318ea398181cd4316089aa162b3a
