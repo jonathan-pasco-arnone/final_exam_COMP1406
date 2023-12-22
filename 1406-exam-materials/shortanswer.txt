@@ -47,7 +47,8 @@ Assignment extends CourseWork:
 Each assignment is a part of the course that requires submission.
 
 ClassRoom:
-Classroom is not a superclass or a subclass.
+I am making the assumption that "ClassRoom" refers to the actual room that a class would be held in.
+Classroom is not a superclass or a subclass as it does not directly associate with any of the other classes well.
 
 
 Additionally, there is a file called "University_Class_Structure.png" that will better show how the classes are inherited from each other.
