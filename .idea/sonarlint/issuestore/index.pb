@@ -23,3 +23,7 @@ Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a057
 Q.idea/sonarlint/securityhotspotstore/d/f/dfe59e5c56e3a86734ececcb91b40195757ef023,c\a\cab4bab6bfe9f79023d442e958b08299c108a57b
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+q
+A1406-exam-materials/1406-Exam-Code/src/BinaryTreeTestProgram.java,0\a\0a972826b8ba44d7bd6fdaf2fc8b19e5e70d195e
+f
+61406-exam-materials/1406-Exam-Code/src/BinaryTree.java,5\f\5fe7043b10cee94e0cf0a804a823bcf5d6222c20
