@@ -1,0 +1,25 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+z
+J1406-exam-materials/1406-Exam-Code/src/StringCollectionImplementation.java,d\f\dfe59e5c56e3a86734ececcb91b40195757ef023
+r
+B1406-exam-materials/1406-Exam-Code/src/StringCollectionTester.java,7\7\770d8b95b099d2c43d310861518818ac46d3d8ba
+l
+<1406-exam-materials/1406-Exam-Code/src/StringCollection.java,d\0\d03b1098e7561eab050372c7bf20bffb99fc743e
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+
+Q.idea/sonarlint/securityhotspotstore/7/7/770d8b95b099d2c43d310861518818ac46d3d8ba,3\c\3ce167db02cdae69c40250fecc429cb0b3c61089
+S
+#1406-exam-materials/shortanswer.txt,2\3\23969a41c98aa50b1e92a6cfd6daea1ce5ea70f9
+G
+final_exam_COMP1406.iml,5\5\559b44e3a6fa1e7574322e2ec1e1c5beb6831e82
+w
+G.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,b\4\b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3
+
+Q.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,1\0\10a03f31c4dce92cb371e761ce9429428bb6c176
+
+Q.idea/sonarlint/securityhotspotstore/d/f/dfe59e5c56e3a86734ececcb91b40195757ef023,c\a\cab4bab6bfe9f79023d442e958b08299c108a57b
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

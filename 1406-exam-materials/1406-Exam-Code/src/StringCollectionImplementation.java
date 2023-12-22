@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.List;
 
 /*
@@ -9,9 +11,14 @@ storage/memory to facilitate the minimization of computational complexity.
 */
 public class StringCollectionImplementation implements StringCollection {
 
+    private List<String> collection;
+    // Hashtable string is the key, and the arraylist of integers is all the values it is at
+    private Hashtable<String, ArrayList<Integer>> collectionIndex;
+
     //Your class must support this zero argument constructor
     public StringCollectionImplementation(){
-
+        collection = new ArrayList<>();
+        collectionIndex = new Hashtable<>();
     }
 
     /**
@@ -20,7 +27,11 @@ public class StringCollectionImplementation implements StringCollection {
      * @param s the string to add to the collection
      */
     public void add(String s) {
-
+        if (!contains(s)) {
+            collectionIndex.put(s, new ArrayList<>());
+        }
+        collectionIndex.get(s).add(size());
+        collection.add(s);
     }
 
     /**
@@ -32,14 +43,17 @@ public class StringCollectionImplementation implements StringCollection {
      * @param list
      */
     public void addAll(StringCollection list) {
-
+        for (int i = 0; i < list.size(); i++) {
+            add(list.get(i));
+        }
     }
 
     /**
      * Clears all entries within the calling StringCollection.
      */
     public void clear() {
-
+        collection = new ArrayList<>();
+        collectionIndex = new Hashtable<>();
     }
 
     /**
@@ -50,7 +64,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return true if s is in the StringCollection, false otherwise
      */
     public boolean contains(String s) {
-        return false;
+        return collectionIndex.containsKey(s);
     }
 
     /**
@@ -59,7 +73,11 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the string at the given index if the index is valid, null otherwise
      */
     public String get(int index) {
-        return null;
+        if (index < size() && index >= 0) {
+            return collection.get(index);
+        } else {
+            return null;
+        }
     }
 
     /**
@@ -70,7 +88,12 @@ public class StringCollectionImplementation implements StringCollection {
      * if the given string is not present
      */
     public int indexOf(String s) {
-        return 0;
+        if (contains(s)) {
+            // Use the "s" parameter as the key and then get the 0th (or first) value of that list
+            return collectionIndex.get(s).get(0);
+        } else {
+            return -1;
+        }
     }
 
     /**
@@ -80,7 +103,25 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the string that was removed, or null if the index was not valid
      */
     public String remove(int index) {
-        return null;
+        if (get(index) == null) {
+            return null;
+        }
+
+        // Note the return value
+        String returnValue = get(index);
+        // Create a temporary collection for copying over
+        List<String> temporaryCollection = collection;
+
+        // Clear everything, then add everything back into the collection except the index in the parameter
+        clear();
+        for (int i = 0; i < temporaryCollection.size(); i++) {
+            if (i != index) {
+                add(temporaryCollection.get(i));
+            }
+        }
+
+        return returnValue;
+
     }
 
     /**
@@ -90,7 +131,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the number of strings contained in the calling collection.
      */
     public int size() {
-        return 0;
+        return collection.size();
     }
 
     /**
@@ -100,7 +141,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the number of unique strings contained in the collection
      */
     public int getUniqueStringCount() {
-        return 0;
+        return collectionIndex.keySet().size();
     }
 
     /**
@@ -114,7 +155,18 @@ public class StringCollectionImplementation implements StringCollection {
      * StringCollection that begin with the specified prefix.
      */
     public StringCollection getUniqueByPrefix(String prefix) {
-        return null;
+        StringCollection newCollection = new StringCollectionImplementation();
+        for (String value : collectionIndex.keySet()) {
+
+            // If the value has enough letters to even have the prefix
+            if (value.length() >= prefix.length()) {
+                // Check if the first x amount of letters is equal to the prefix
+                if (value.startsWith(prefix)) {
+                    newCollection.add(value);
+                }
+            }
+        }
+        return newCollection;
     }
 
     /**
@@ -125,7 +177,11 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the frequency of s in the calling StringCollection
      */
     public int getFrequency(String s) {
-        return 0;
+        if (contains(s)) {
+            return collectionIndex.get(s).size();
+        } else {
+            return 0;
+        }
     }
 
     /**
@@ -135,6 +191,9 @@ public class StringCollectionImplementation implements StringCollection {
      * @return a list of lexicographically sorted words from the StringCollection
      */
     public List<String> getSortedWords() {
-        return null;
+        List<String> orderedWords = collection;
+        // Use built in compareTo method for strings
+        orderedWords.sort(String::compareTo);
+        return orderedWords;
     }
 }

@@ -1,0 +1,89 @@
+
+v
+java:S2293o"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä„ƒ8•³‘É1
+f
+java:S1192"IDefine a constant instead of duplicating this literal "elephant" 3 times.(šì¤é8–³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(ı‰êÉüÿÿÿÿ8°³‘É1
+G	java:S106"+Replace this use of System.out by a logger.(Ÿ‡¹¶8°³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(ºÔï¤úÿÿÿÿ8±³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(ÉÌÌúúÿÿÿÿ8±³‘É1
+G	java:S106"+Replace this use of System.out by a logger.( ØÊÔ8±³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(İâ×şÿÿÿÿ8±³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(©Ùôıüÿÿÿÿ8±³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(Şìóœúÿÿÿÿ8²³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(ÀëÈ©ıÿÿÿÿ8²³‘É1
+G	java:S106"+Replace this use of System.out by a logger.(şºøï8²³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(²³¸ùÿÿÿÿ8²³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(äŸ‘Óşÿÿÿÿ8³³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(»Ö¥Àúÿÿÿÿ8³³‘É1
+G	java:S106"+Replace this use of System.out by a logger.(Ò8³³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(‹½¼Šüÿÿÿÿ8³³‘É1
+L	java:S106"+Replace this use of System.out by a logger.(â÷¬üÿÿÿÿ8³³‘É1
+G	java:S106"+Replace this use of System.out by a logger.(İ±¢Ğ8´³‘É1
+L	java:S106 "+Replace this use of System.out by a logger.(¦é„Ñıÿÿÿÿ8´³‘É1
+L	java:S106!"+Replace this use of System.out by a logger.(ÉÀäøÿÿÿÿ8´³‘É1
+L	java:S106""+Replace this use of System.out by a logger.(—Õ öıÿÿÿÿ8´³‘É1
+G	java:S106#"+Replace this use of System.out by a logger.(Ïãï8´³‘É1
+L	java:S106,"+Replace this use of System.out by a logger.(‚ÙşŸıÿÿÿÿ8¶³‘É1
+L	java:S106-"+Replace this use of System.out by a logger.(í¶¹Áøÿÿÿÿ8¶³‘É1
+G	java:S106/"+Replace this use of System.out by a logger.(ÑêÖ…8¶³‘É1
+G	java:S1064"+Replace this use of System.out by a logger.(°ïÅ…8·³‘É1
+G	java:S1066"+Replace this use of System.out by a logger.(äèİÅ8·³‘É1
+L	java:S1067"+Replace this use of System.out by a logger.(â÷—èıÿÿÿÿ8·³‘É1
+G	java:S1068"+Replace this use of System.out by a logger.(ë”ƒÍ8·³‘É1
+L	java:S1069"+Replace this use of System.out by a logger.(‹ÙÛ¢üÿÿÿÿ8¸³‘É1
+L	java:S106:"+Replace this use of System.out by a logger.(à°Ñúÿÿÿÿ8¸³‘É1
+G	java:S106;"+Replace this use of System.out by a logger.(¾¯Ãˆ8¸³‘É1
+L	java:S106<"+Replace this use of System.out by a logger.(üË¬èúÿÿÿÿ8¹³‘É1
+L	java:S106="+Replace this use of System.out by a logger.(ĞóîÉüÿÿÿÿ8¹³‘É1
+L	java:S106>"+Replace this use of System.out by a logger.(¸¯„–ùÿÿÿÿ8¹³‘É1
+L	java:S106?"+Replace this use of System.out by a logger.(‹á™ƒıÿÿÿÿ8¹³‘É1
+G	java:S106@"+Replace this use of System.out by a logger.(ÅÜ®÷8¹³‘É1
+G	java:S106A"+Replace this use of System.out by a logger.(ßõ©å8º³‘É1
+G	java:S106B"+Replace this use of System.out by a logger.(¾ä¾±8º³‘É1
+L	java:S106C"+Replace this use of System.out by a logger.(¾ËôÄşÿÿÿÿ8º³‘É1
+L	java:S106D"+Replace this use of System.out by a logger.(‚Å·Şşÿÿÿÿ8º³‘É1
+G	java:S106M"+Replace this use of System.out by a logger.(å›•ç8»³‘É1
+G	java:S106N"+Replace this use of System.out by a logger.(óÅÍà8»³‘É1
+G	java:S106O"+Replace this use of System.out by a logger.(¡ì§ˆ8»³‘É1
+L	java:S106P"+Replace this use of System.out by a logger.(‰Òšúÿÿÿÿ8»³‘É1
+G	java:S106Q"+Replace this use of System.out by a logger.(³ƒÄÜ8¼³‘É1
+G	java:S106R"+Replace this use of System.out by a logger.(ñë•ª8¼³‘É1
+L	java:S106S"+Replace this use of System.out by a logger.(¾àÉŒùÿÿÿÿ8¼³‘É1
+L	java:S106U"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¼³‘É1
+G	java:S106V"+Replace this use of System.out by a logger.(Õ´Âø8½³‘É1
+L	java:S106X"+Replace this use of System.out by a logger.(âÓÂ”üÿÿÿÿ8½³‘É1
+L	java:S106Y"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8½³‘É1
+G	java:S106["+Replace this use of System.out by a logger.(İ±¢Ğ8½³‘É1
+G	java:S106]"+Replace this use of System.out by a logger.(”ïìÑ8½³‘É1
+=
+java:S2129^" Remove this "String" constructor(ôñ”õ8¿³‘É1
+=
+java:S2129_" Remove this "String" constructor(ôñ”õ8¿³‘É1
+=
+java:S2129`" Remove this "String" constructor(§¦å8À³‘É1
+=
+java:S2129a" Remove this "String" constructor(¾ôØ™8À³‘É1
+L	java:S106b"+Replace this use of System.out by a logger.(¾ùÿÿÿÿÿ8À³‘É1
+B
+java:S2129b" Remove this "String" constructor(¾ùÿÿÿÿÿ8À³‘É1
+L	java:S106c"+Replace this use of System.out by a logger.(Ãä¿Çüÿÿÿÿ8Á³‘É1
+B
+java:S2129c" Remove this "String" constructor(Ãä¿Çüÿÿÿÿ8Á³‘É1
+G	java:S106d"+Replace this use of System.out by a logger.(»Í»²8Á³‘É1
+=
+java:S2129d" Remove this "String" constructor(»Í»²8Á³‘É1
+G	java:S106e"+Replace this use of System.out by a logger.(ƒÄ¢Ê8Á³‘É1
+G	java:S106g"+Replace this use of System.out by a logger.(»Í»²8Â³‘É1
+=
+java:S2129g" Remove this "String" constructor(»Í»²8Â³‘É1
+G	java:S106h"+Replace this use of System.out by a logger.(ƒÄ¢Ê8Â³‘É1
+G	java:S106j"+Replace this use of System.out by a logger.(´½åê8Â³‘É1
+]	java:S125i"<This block of commented-out lines of code should be removed.(…®‰÷øÿÿÿÿ8Â³‘É1
+=
+java:S2129j" Remove this "String" constructor(´½åê8Â³‘É1
+L	java:S106k"+Replace this use of System.out by a logger.(úõñäûÿÿÿÿ8Ã³‘É1
+B
+java:S2129k" Remove this "String" constructor(úõñäûÿÿÿÿ8Ã³‘É1
+{
+java:S3012r"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ì»©‚øÿÿÿÿ8Ä³‘É1
