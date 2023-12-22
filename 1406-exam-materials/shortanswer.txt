@@ -1,2 +1,53 @@
-Create a class hierarchy for the following classes to be used in a software system modelling a university: Person, Exam, Employee, Instructor, Student, FullTimeStudent, Midterm, Professor, PartTimeStudent, CourseWork, Assignment, ClassRoom. For each class, indicate what other class it would inherit from, if any (e.g., “Student extends Exam”), and include a brief explanation of why you think this class should (or should not) inherit from another. Note that you do not need to fully develop the classes. You only need to indicate which classes extend from others and provide your explanation. Your explanation could refer to some state or behaviour that you anticipate the classes having. You may add additional classes into the design if you think it is appropriate (provide justification). If you are unfamiliar with what one of the class names represents, write your assumptions about what that class would represent within the system and incorporate it into the class hierarchy based on those assumptions. Within reason, correctly reasoning about the class hierarchy can be considered just as important as recreating the expected solution.
+Create a class hierarchy for the following classes to be used in a software system modelling a university:
 
+Person, Exam, Employee, Instructor, Student, FullTimeStudent, Midterm, Professor, PartTimeStudent, CourseWork,
+Assignment, ClassRoom.
+
+For each class, indicate what other class it would inherit from, if any (e.g., “Student extends Exam”), and include a
+brief explanation of why you think this class should (or should not) inherit from another. Note that you do not need to
+fully develop the classes. You only need to indicate which classes extend from others and provide your explanation.
+Your explanation could refer to some state or behaviour that you anticipate the classes having. You may add additional
+classes into the design if you think it is appropriate (provide justification). If you are unfamiliar with what one of
+the class names represents, write your assumptions about what that class would represent within the system and
+incorporate it into the class hierarchy based on those assumptions. Within reason, correctly reasoning about the class
+hierarchy can be considered just as important as recreating the expected solution.
+
+
+Person:
+Person is a superclass, but does not inherit from anything.
+
+Exam extends CourseWork:
+An exam is part of the course that requires submission.
+
+Employee extends Person:
+Every employee is also a person.
+
+Instructor extends Employee:
+An instructor is a more specific type of employee (i.e. every employee is either a professor or an instructor).
+
+Student extends Person:
+Every student is also a person.
+
+FullTimeStudent extends Student:
+A full time student is a more specific type of student (i.e. every student is either full time or part-time).
+
+Midterm extends CourseWork:
+A midterm is part of the course that requires submission.
+
+Professor extends Employee:
+A professor is a more specific type of employee (i.e. every employee is either a professor or an instructor).
+
+PartTimeStudent extends Student:
+A part-time student is a more specific type of student (i.e. every student is either full time or part-time).
+
+CourseWork:
+I am making the assumption that "CourseWork" is representative of ALL the submitted work within the course.
+
+Assignment extends CourseWork:
+Each assignment is a part of the course that requires submission.
+
+ClassRoom:
+Classroom is not a superclass or a subclass.
+
+
+Additionally, there is a file called "University_Class_Structure.png" that will better show how the classes are inherited from each other.
