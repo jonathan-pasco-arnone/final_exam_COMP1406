@@ -32,7 +32,6 @@ public class BinaryTree {
      * In other words, the data stored in the two trees is identical.
      **/
     public boolean sameAs(BinaryTree otherRoot){
-        boolean dataSame = (data == otherRoot.getData());
         // The default value is false and represents the case if only ONE child is null
         boolean leftChildSame =  false;
         boolean rightChildSame = false;
@@ -55,6 +54,6 @@ public class BinaryTree {
             rightChildSame = rightChild.sameAs(otherRoot.getRightChild());
         }
 
-        return dataSame && leftChildSame && rightChildSame;
+        return (data == otherRoot.getData()) && leftChildSame && rightChildSame;
     }
 }

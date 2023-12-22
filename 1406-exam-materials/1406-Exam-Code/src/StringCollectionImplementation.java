@@ -11,14 +11,18 @@ storage/memory to facilitate the minimization of computational complexity.
 */
 public class StringCollectionImplementation implements StringCollection {
 
+    // Having a list will maintain the order and allow for duplicates
+    // Also easy access to an individual index
     private List<String> collection;
-    // Hashtable string is the key, and the arraylist of integers is all the values it is at
-    private Hashtable<String, ArrayList<Integer>> collectionIndex;
+    // Hashtable has a string value as the key, and the arraylist of integers is all the index the key is at
+    // Having a hashtable allows for easy access to find the specific index(s) of any string
+    // Also makes the "contains" function much simpler
+    private Hashtable<String, ArrayList<Integer>> collectionDictionary;
 
     //Your class must support this zero argument constructor
     public StringCollectionImplementation(){
         collection = new ArrayList<>();
-        collectionIndex = new Hashtable<>();
+        collectionDictionary = new Hashtable<>();
     }
 
     /**
@@ -27,10 +31,11 @@ public class StringCollectionImplementation implements StringCollection {
      * @param s the string to add to the collection
      */
     public void add(String s) {
+        // If the dictionary does not already contain this string
         if (!contains(s)) {
-            collectionIndex.put(s, new ArrayList<>());
+            collectionDictionary.put(s, new ArrayList<>());
         }
-        collectionIndex.get(s).add(size());
+        collectionDictionary.get(s).add(size());
         collection.add(s);
     }
 
@@ -53,7 +58,7 @@ public class StringCollectionImplementation implements StringCollection {
      */
     public void clear() {
         collection = new ArrayList<>();
-        collectionIndex = new Hashtable<>();
+        collectionDictionary = new Hashtable<>();
     }
 
     /**
@@ -64,7 +69,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return true if s is in the StringCollection, false otherwise
      */
     public boolean contains(String s) {
-        return collectionIndex.containsKey(s);
+        return collectionDictionary.containsKey(s);
     }
 
     /**
@@ -73,6 +78,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the string at the given index if the index is valid, null otherwise
      */
     public String get(int index) {
+        // If index is in range 0 -> size()
         if (index < size() && index >= 0) {
             return collection.get(index);
         } else {
@@ -90,7 +96,7 @@ public class StringCollectionImplementation implements StringCollection {
     public int indexOf(String s) {
         if (contains(s)) {
             // Use the "s" parameter as the key and then get the 0th (or first) value of that list
-            return collectionIndex.get(s).get(0);
+            return collectionDictionary.get(s).get(0);
         } else {
             return -1;
         }
@@ -141,7 +147,7 @@ public class StringCollectionImplementation implements StringCollection {
      * @return the number of unique strings contained in the collection
      */
     public int getUniqueStringCount() {
-        return collectionIndex.keySet().size();
+        return collectionDictionary.keySet().size();
     }
 
     /**
@@ -156,9 +162,8 @@ public class StringCollectionImplementation implements StringCollection {
      */
     public StringCollection getUniqueByPrefix(String prefix) {
         StringCollection newCollection = new StringCollectionImplementation();
-        for (String value : collectionIndex.keySet()) {
-
-            // If the value has enough letters to even have the prefix
+        for (String value : collectionDictionary.keySet()) {
+            // If the value has enough letters to have the prefix
             if (value.length() >= prefix.length()) {
                 // Check if the first x amount of letters is equal to the prefix
                 if (value.startsWith(prefix)) {
@@ -178,7 +183,7 @@ public class StringCollectionImplementation implements StringCollection {
      */
     public int getFrequency(String s) {
         if (contains(s)) {
-            return collectionIndex.get(s).size();
+            return collectionDictionary.get(s).size();
         } else {
             return 0;
         }
